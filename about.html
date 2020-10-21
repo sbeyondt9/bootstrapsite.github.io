@@ -2,71 +2,55 @@
 <html lang="en">
 
 <head>
+  <title>Bootstrap Example</title>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-  <title>Santosh Bootstrap website</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
+    <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
 
 
-
   <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container">
+  <div id="result"></div>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+  <a class="navbar-brand mx-5" href="index.html">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-      <div class="logo float-left">
-        <h1 class="text-light"><a href="index.html"><span>Santosh</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
-
-      <nav class="nav-menu float-right d-none d-lg-block">
-        <ul>
-          <li class="nav-item">
-                    <a class="nav-link nav-link-1" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-2" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-3 active" aria-current="page" href="services.html">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-4" href="contact.html">Contact</a>
-                </li>
-                </ul>
-      </nav><!-- .nav-menu -->
-
-    </div>
-  </header><!-- End Header -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto mx-5">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="services.html">Services</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero">
+  <div id="hero">
     <div class="hero-container">
       <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 
@@ -75,114 +59,78 @@
         <div class="carousel-inner" role="listbox">
 
           <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url('assets/img/slide/slide-1.jpg');">
+          <div class="carousel-item active" style="background-image: url('assets/img/portfolio/portfolio-3.jpg');">
             <div class="carousel-container">
               <div class="carousel-content container">
-                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Bootstrap</span></h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                <h2 style="color:white;">Welcome to <span>Bootstrap</span></h2>
+                <p style="color:white;">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
                 <a href="#about111" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
               </div>
             </div>
           </div>
 
-      
+         
+
+     
     </div>
-  </section><!-- End Hero -->
+  </div><!-- End Hero -->
 
-  <main id="main">
 
-   <section id="about" class="about">
-      <div class="container ">
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
 
         <div class="row no-gutters">
-          
+          <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
 
           <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
 
             <div class="section-title">
-             <h2 class="text-justify" style="font-size:40px">This is dummy text</h2>
+             <!--<h2>About Us</h2>-->
               <div class="text-left">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</div>
             </div>
+
          
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+
+
+    <section id="about" class="about"><!-- start Section2 -->
+      <div class="container">
+
+        <div class="row no-gutters">
+       <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
+
+            <div class="section-title">
+              <div class="text-left">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</div>
+            </div> <br><button type="button" class="btn btn-primary  btn-lg" style="width:140px">Read More</button>
 
           </div>
 
           <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
-<div class="row">
-
-<div class="col-lg-6 d-flex flex-column justify-content-center about-content">
-<img src="assets/img/diamond.jpg" class="img-fluid" alt="" style="width:100%"><Br>
-<h3>Dummy Text</h3>
-</div>
-
-   <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
-<img src="assets/img/diamond.jpg" class="img-fluid" alt="" style="width:100%"><Br>
-<h3>Dummy Text</h3>
-</div>
-
-</div>
-
-    <div class="row">
-<div class="col-lg-6 d-flex flex-column justify-content-center about-content">
-<img src="assets/img/diamond.jpg" class="img-fluid" alt="" style="width:100%"><Br>
-<h3>Dummy Text</h3>
-</div>
-
-   <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
-<img src="assets/img/diamond.jpg" class="img-fluid" alt="" style="width:100%"><Br>
-<h3>Dummy Text</h3>
-</div>
-
-</div>
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
           </div>
         </div>
 
       </div>
-    </section>
-
-    <!-- =======start Section 2 ======= -->
-   <section id="about" class="about">
-      <div class="container ">
-
-        <div class="row no-gutters">
-          
-            <div class="col-lg-4 d-flex flex-column justify-content-center about-content">
-           <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-</div><br>
-            <h2>Dummy Text</h2>
-            <p>This is dummy text This is dummy text This is dummy text This is dummy text This is dummy text</p>
-          </div>
-
-              <div class="col-lg-4 d-flex flex-column justify-content-center about-content">
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-</div><br>               <h2>Dummy Text</h2>
-                <p>This is dummy text This is dummy text This is dummy text This is dummy text This is dummy text</p>
-
-            </div>        
-
-          <div class="col-lg-4 d-flex flex-column justify-content-center about-content">
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-</div><br>            <h2>Dummy Text</h2>
-              <p>This is dummy text This is dummy text This is dummy text This is dummy text This is dummy text</p>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-    <!-- end Section 2 -->
+    </section><!-- End Section2 -->
 
 
-    <!-- start section 3 -->  
-    <section id="about" class="about">
-      <div class="container ">
 
-        <div class="row no-gutters">
+<!-- start third section -->
+  <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
           <div class="col-lg-5 d-flex flex-column justify-content-center about-content">
+                       <b><h3 class="text-center">This is dummy text</h3></b>
 
             <img src="assets/img/about.jpg" class="img-fluid" alt="" style="width:100%">
           </div>
@@ -190,10 +138,10 @@
           <div class="col-lg-7 d-flex flex-column justify-content-center about-content">
 
             <div class="section-title">
-             <h2 class="text-justify" style="font-size:50px">This is dummy text</h2>
+             <h2 class="text-justify">This is dummy text</h2>
               <div class="text-left">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</div>
             </div>
-<button type="button" class="btn btn-primary  btn-lg" style="width:140px">Read More</button>
+<br><button type="button" class="btn btn-primary  btn-lg" style="width:140px">Read More</button>
          
 
           </div>
@@ -201,89 +149,86 @@
 
       </div>
     </section>
-<!-- End section 3 -->  
+<!-- end third section -->
 
 
 
-    <!-- start section 4 -->  
-    <section id="about" class="about">
-      <div class="container ">
 
-        <div class="row no-gutters">
-          
 
-          <div class="col-lg-7 d-flex flex-column justify-content-center about-content">
 
-            <div class="section-title">
-             <h2 class="text-justify" style="font-size:50px">This is dummy text</h2>
-              <div class="text-left">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</div>
-            </div>
-<button type="button" class="btn btn-primary  btn-lg" style="width:140px">Read More</button>
-         
 
-          </div>
 
-          <div class="col-lg-5 d-flex flex-column justify-content-center about-content">
 
-            <img src="assets/img/about.jpg" class="img-fluid" alt="" style="width:100%">
-          </div>
+
+    <!-- start  Section 4--> 
+<section class="counts section-bg">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up">
+<i class='far fa-address-card' style='font-size:56px'></i>          </div>
+
+          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
+<i class='far fa-address-card' style='font-size:56px'></i>          </div>
+
+          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="400">
+<i class='far fa-address-card' style='font-size:56px'></i>          </div>
+
+          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="600">
+<i class='far fa-address-card' style='font-size:56px'></i>         </div>
+
         </div>
+                       <br><h2 class="text-center">This is dummy text</h2>
 
       </div>
     </section>
-<!-- End section 4-->  
+<!-- End  Section 4-->
 
-
- <!-- start section 5 -->  
+   
+    <!-- ======= start section five ======= -->
     <section id="about" class="about">
-      <div class="container ">
+      <div class="container">
 
         <div class="row no-gutters">
-          
-            <div class="col-lg-4 d-flex flex-column justify-content-center about-content">
-            <div class="card " style="width:100%">
-    <img class="card-img-top" src="assets/img/about.jpg" alt="Card image" >
-    <div class="card-body">
-      <h4 class="card-title">Dummy Text</h4>
-      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-      <a href="#" class="btn btn-primary">Know More</a>
-    </div>
-  </div>
-          </div>
-
-              <div class="col-lg-4 d-flex flex-column justify-content-center about-content">
-               <div class="card " style="width:100%">
-    <img class="card-img-top" src="assets/img/about.jpg" alt="Card image" >
-    <div class="card-body">
-      <h4 class="card-title">Dummy Text</h4>
-      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-      <a href="#" class="btn btn-primary">Know More</a>
-    </div>
-  </div>
-            </div>        
-
           <div class="col-lg-4 d-flex flex-column justify-content-center about-content">
-           <div class="card" style="width:100%">
-    <img class="card-img-top" src="assets/img/about.jpg" alt="Card image" >
-    <div class="card-body">
-      <h4 class="card-title">Dummy Text</h4>
-      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-      <a href="#" class="btn btn-primary">Know More</a>
-    </div>
-  </div>
+
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
           </div>
 
+          <div class="col-lg-8 d-flex flex-column justify-content-center about-content">
+
+             <h2 class="text-justify">This is dummy text</h2>
+              <div class="text-left">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</div>
+
+         
+
+          </div>
+        </div>
+
+           <div class="row ">
+          <div class="col-lg-4 d-flex flex-column justify-content-center about-content">
+
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-8 d-flex flex-column justify-content-center about-content">
+
+             <h2 class="text-justify">This is dummy text</h2>
+              <div class="text-left">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</div>
+
+         
+
+          </div>
         </div>
 
       </div>
     </section>
-<!-- End section 5-->  
-
-
-
+<!-- End section five -->
 
     
 
+   
  <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
@@ -299,11 +244,10 @@
               <strong>Email:</strong> info@example.com<br>
             </p>
             <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+           <i class='far fa-address-card' style='font-size:36px'></i> 
+              <i class='far fa-address-card' style='font-size:36px'></i> 
+              <i class='far fa-address-card' style='font-size:36px'></i> 
+              <i class='far fa-address-card' style='font-size:36px'></i> 
             </div>
           </div>
 
@@ -344,43 +288,15 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>beyondt</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Beyondt</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/ -->
         Designed by <a href="https://beyondt.in/">Beyondt.in</a>
       </div>
     </div>
   </footer><!-- End Footer -->
 
 
-
-    
-
-   
-
-
- 
-
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
 
 </body>
 
