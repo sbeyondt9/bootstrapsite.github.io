@@ -1,10 +1,10 @@
-
 body {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  background-color: #fcdab7;
 }
 
 a {
-  color: #428bca;
+  color: #1e5f74;
 }
 
 a:hover {
@@ -13,14 +13,37 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6, .font-primary {
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  /* font-family: 'Nobile', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+p {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 19px;
+  line-height: 1.7em;
+  color: #4a4a4a;
+}
+
+h1{
+  font-size: 3rem;
 }
 
 
 
-# Hero Section
+h2 {
+  font-size: 2.5rem;
+
+}
+
+h3 {
+  font-size: 25px;
+}
+
+/* # Hero Section
 --------------------------------------------------------------*/
-#hero {
+*/ #hero {
   width: 100%;
   height: calc(100vh - 114px);
   padding: 0;
@@ -65,8 +88,6 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   text-align: left;
 }
 
-
-
 #hero h2 {
   color: ;
   margin-bottom: 30px;
@@ -81,11 +102,8 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   color: black;
 }
 
-
-
-
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -116,6 +134,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   #hero p {
     width: 60%;
   }
+
   #hero .carousel-control-prev, #hero .carousel-control-next {
     width: 5%;
   }
@@ -124,17 +143,11 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-section {
+/* section {
   padding: 50px 0;
-}
-
+} */
 .section-bg {
   background-color: #f5f9fc;
-}
-
-.section-title {
-  text-align: center;
-  padding-bottom: 30px;
 }
 
 .section-title h2 {
@@ -145,36 +158,30 @@ section {
   color: #888888;
 }
 
-.section-title p {
-  margin-bottom: 0;
+.section-title {
+  text-align: left;
+  padding: 6% 0;
 }
 
-
-# About Us
---------------------------------------------------------------*/
-.about {
+/* About Us */
+/* .about {
   padding-bottom: 30px;
-}
-
+} */
 .about .video-box img {
   padding: 15px 0;
 }
 
-.about .section-title p {
+/* .about .section-title p {
   text-align: left;
   font-style: italic;
   color: black;
-}
-
-.about .about-content {
+} */
+/* .about .about-content {
   padding: 40px;
-}
-
-.about .icon-box + .icon-box {
+} */
+.about .icon-box+.icon-box {
   margin-top: 40px;
 }
-
-
 
 .about .play-btn {
   width: 94px;
@@ -188,8 +195,7 @@ section {
   overflow: hidden;
 }
 
-
-# Contact Us
+/* # Contact Us
 --------------------------------------------------------------*/
 .contact .info-box {
   color: #444;
@@ -244,7 +250,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br + br {
+.contact .php-email-form .error-message br+br {
   margin-top: 25px;
 }
 
@@ -307,19 +313,15 @@ section {
   background: #6aa3d5;
 }
 
-
-
 #footer {
-  background: #587187;
-  padding: 0 0 30px 0;
+  background: #133b5c;
   color: #fff;
   font-size: 14px;
+  padding: 0 10%;
 }
 
 #footer .footer-top {
-  background: #5c768d;
-  border-top: 1px solid #768fa6;
-  border-bottom: 1px solid #67839c;
+  background: #133b5c;
   padding: 60px 0 30px 0;
 }
 
@@ -339,7 +341,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
   color: #fff;
 }
 
@@ -390,7 +392,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul li {
-  padding: 10px 0;
+  padding: 5px 0;
   display: flex;
   align-items: center;
 }
@@ -426,10 +428,6 @@ section {
 
 #footer .footer-top .footer-newsletter form input[type="submit"] {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  border: 0;
   background: none;
   font-size: 16px;
   padding: 0 20px;
@@ -445,7 +443,7 @@ section {
 
 #footer .copyright {
   text-align: center;
-  padding-top: 30px;
+  padding: 20px 0;
 }
 
 #footer .credits {
@@ -459,7 +457,135 @@ section {
   color: #9eccf4;
 }
 
-iframe:hover{
-  width:100%;
+iframe:hover {
+  width: 100%;
+}
+
+/* CSS Added by AG */
+.banner-image {
+  position: absolute;
+object-fit: cover;
+width: 100%;
+}
+
+#home-title {
+  background-position: center;
+}
+
+#about {
+  padding: 10% 10% 7%;
+  background-color: #fff;
+}
+
+#featured-reels {
+  padding: 7% 10%;
+}
+
+#feature-details {
+  padding: 10% 10%;
+  background-color: #f9f9f9;
+}
+
+#partner-logos {
+  padding: 3% 20%;
+  text-align: center;
+}
+
+#contact{
+  padding: 10% 10% 7%;
+  text-align: left;
+
+}
+
+#showreel-intro{
+  padding: 10% 10%;
+  background-color: #1d2d50;
+  color: #fff;
+}
+
+#showreel-intro p{
+  color: #fff;
+}
+
+#showreel-body{
+  padding: 10% 10%;
+  background-color: #fff;
+}
+
+
+
+
+.navbar {
+  padding: 4% 10%;
+  background-color: #1d2d50;
+}
+
+.banner-text {
+  padding: 10% 10% 15%;
+  line-height: 1;
+  color: #fff;
+}
+
+.banner-caption-data{
+  color: #fff;
+}
+
+.img-fluid {
+  width: 90%
+}
+
+.about-content {
+  text-align: center;
+}
+
+.award-icons {
+  padding: 30px 20px 50px 50px;
+  padding: 0 25px;
+}
+
+.reel {
+  padding: 15px;
+}
+
+.feature-detail-box {
+  padding-bottom: 60px;
+}
+
+.feature-detail-text {
+  padding: 10% 0;
+}
+
+.partner-icon {
+  width: 60%;
+}
+
+.copy-sent {
+  font-size: 12px;
+  color: #fff;
+}
+
+.banner-caption {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.navbar-brand {
+  font-family: 'Nobile', sans-serif;
+  font-size: 1.5rem;
+}
+
+.title-heading{
+  padding-bottom: 20px;
+}
+
+.reel-subtitle{
+  font-size: 16px;
+  color: black;
+}
+
+.contactforms{
+  background-color: #fff;
+  padding: 30px;
+  float: right;
 
 }
