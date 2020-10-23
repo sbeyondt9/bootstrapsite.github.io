@@ -2,14 +2,6 @@ body {
   /* font-family: "Open Sans", sans-serif; */
   background-color: #fcdab7;
 }
-
-.modal-dialog {
-  max-width: 750px;
-  max-height: 500px;
-  margin: auto;
-}
-
-
 a {
   color: #1e5f74;
 }
