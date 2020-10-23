@@ -3,6 +3,12 @@ body {
   background-color: #fcdab7;
 }
 
+.modal-ku {
+  width: 750px;
+  margin: auto;
+}
+
+
 a {
   color: #1e5f74;
 }
