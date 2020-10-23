@@ -5,6 +5,7 @@ body {
 
 .modal-dialog {
   max-width: 750px;
+  max-height: 500px;
   margin: auto;
 }
 
