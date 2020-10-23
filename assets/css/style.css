@@ -26,15 +26,13 @@ p {
   color: #4a4a4a;
 }
 
-h1{
+h1 {
   font-size: 3rem;
 }
 
-
-
 h2 {
   font-size: 2.5rem;
-
+  color: #1d2d50;
 }
 
 h3 {
@@ -95,12 +93,12 @@ h3 {
   font-weight: 900;
 }
 
-#hero p {
+/* #hero p {
   width: 80%;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
   color: black;
-}
+} */
 
 #hero .btn-get-started {
   /* font-family: "Raleway", sans-serif; */
@@ -130,10 +128,10 @@ h3 {
   }
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   #hero p {
     width: 60%;
-  }
+  } */
 
   #hero .carousel-control-prev, #hero .carousel-control-next {
     width: 5%;
@@ -457,19 +455,19 @@ h3 {
   color: #9eccf4;
 }
 
-iframe:hover {
+/* iframe:hover {
   width: 100%;
-}
-
+} */
 /* CSS Added by AG */
-.banner-image {
-  position: absolute;
-object-fit: cover;
-width: 100%;
+iframe {
+  width: 100%;
+  height: 260px;
 }
 
 #home-title {
+  background-image: url(https://s.studiobinder.com/wp-content/uploads/2018/03/Film-Lighting-Techniques-Cinematic-Look-Header-Image-StudioBinder.jpg);
   background-position: center;
+
 }
 
 #about {
@@ -479,6 +477,12 @@ width: 100%;
 
 #featured-reels {
   padding: 7% 10%;
+
+}
+
+#press{
+    padding: 7% 10%;
+    background-color: #fff;
 }
 
 #feature-details {
@@ -491,33 +495,58 @@ width: 100%;
   text-align: center;
 }
 
-#contact{
-  padding: 10% 10% 7%;
-  text-align: left;
-
+#about-partner-logos{
+  padding: 3% 10%;
+  text-align: center;
 }
 
-#showreel-intro{
-  padding: 10% 10%;
+#contact {
+  padding: 8% 10% 7%;
+  text-align: left;
+}
+
+#showreel-intro {
+  padding: 8% 8%;
   background-color: #1d2d50;
   color: #fff;
 }
 
-#showreel-intro p{
+#showreel-intro p {
   color: #fff;
 }
 
-#showreel-body{
+#showreel-body {
   padding: 10% 10%;
   background-color: #fff;
 }
 
+#about-page-first-container{
+    padding: 8% 0%;
+}
 
+#about-page-intro{
+  padding: 3% 10%;
+}
 
+#about-founder{
+    padding: 10% 0%;
+    background-color: #fff;
+}
 
-.navbar {
+.navhome {
   padding: 4% 10%;
   background-color: #1d2d50;
+}
+
+.navpage{
+  padding: 1% 10%;
+  background-color: #1d2d50;
+}
+
+.banner-image {
+  position: absolute;
+
+  width: 100%;
 }
 
 .banner-text {
@@ -526,12 +555,12 @@ width: 100%;
   color: #fff;
 }
 
-.banner-caption-data{
+.banner-caption-data {
   color: #fff;
 }
 
 .img-fluid {
-  width: 90%
+  width: 100%
 }
 
 .about-content {
@@ -574,18 +603,56 @@ width: 100%;
   font-size: 1.5rem;
 }
 
-.title-heading{
+.title-heading {
   padding-bottom: 20px;
 }
 
-.reel-subtitle{
+.reel-subtitle {
   font-size: 16px;
   color: black;
 }
 
-.contactforms{
+.contactforms {
   background-color: #fff;
   padding: 30px;
   float: right;
+}
 
+.contact-header {
+  padding-bottom: 5%;
+  color: #1d2d50;
+}
+
+.press-article{
+  padding: 3% 0;
+}
+
+.design-graphic{
+  position: absolute;
+  width: 50rem;
+  opacity: 0.2;
+  right: 2px;
+}
+
+.design-graphic2{
+  position: absolute;
+  width: 40rem;
+  opacity: 0.2;
+  right: 60%;
+  top: 60rem;
+}
+
+.design-graphic-founder{
+  position: absolute;
+  width: 30rem;
+  opacity: 0.5;
+  right: 70%;
+}
+
+.design-graphic-showreel{
+  position: absolute;
+  width: 50rem;
+  opacity: 0.3;
+  transform: rotate(45deg);
+  top: 50rem;
 }
