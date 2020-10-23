@@ -3,8 +3,8 @@ body {
   background-color: #fcdab7;
 }
 
-.modal-ku {
-  width: 750px;
+.modal-dialog {
+  max-width: 750px;
   margin: auto;
 }
 
