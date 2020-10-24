@@ -21,14 +21,14 @@
   
   <style>
    .modal-dialog {
-  width: 100%;
-  height: 100%;
+  width: 100%!important;
+  height: 100%!important;
 
 }
 
 .modal-content {
-  height: auto;
-  min-height: 100%;
+  height: auto!important;
+  min-height: 100%!important;
   border-radius: 0;
 }
   
@@ -261,19 +261,19 @@
             <h2 class="title-heading">I was part of something special. Life finds a way.</h2>
             <p>Do you have any idea how long it takes those cups to decompose. I gave it a cold? I gave it a virus. A computer virus. Forget the fat lady! You're obsessed with the fat lady!</p>
             <br>
-            <button type="button" class="btn btn-dark btn-md" data-toggle="modal1" data-target="#exampleModalCenter1">Read More</button>
+            <button type="button" class="btn btn-dark btn-md" data-toggle="modal" data-target="#exampleModalCenter1">Read More</button>
             
     <!--start Modal -->
-<div class="modal1 fade"  id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal1-dialog modal-dialog-centered" role="document">
-    <div class="modal1-content">
-      <div class="modal1-header">
-        <h5 class="modal1-title" id="exampleModalLongTitle">Life finds a way. This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Did he just throw my cat out of the window? My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard!</h5>
+<div class="modal fade"  id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Life finds a way. This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Did he just throw my cat out of the window? My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard!</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal1-body">
+      <div class="modal-body">
         Life finds a way. This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Did he just throw my cat out of the window? My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard!
       </div>
       <div class="modal1-footer">
@@ -295,14 +295,14 @@
             <p>Life finds a way. This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Did he just throw my cat out of the window? My dad once told me, laugh and the world laughs with you, Cry, and I'll give you
               something to cry about you little bastard!</p>
             <br>
-            <button type="button" class="btn btn-dark  btn-md" data-toggle="modal2" data-target="#exampleModalCenter2">Read More</button>
+            <button type="button" class="btn btn-dark  btn-md" data-toggle="modal" data-target="#exampleModalCenter2">Read More</button>
             
            <!--start Modal -->
-<div class="modal2 fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal2-dialog modal-dialog-centered" role="document">
-    <div class="modal2-content">
-      <div class="modal2-header">
-        <h5 class="modal2-title" id="exampleModalLongTitle">Life finds a way. This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Did he just throw my cat out of the window? My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard!</h5>
+<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Life finds a way. This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Did he just throw my cat out of the window? My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard!</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -424,7 +424,7 @@ $(document).ready(function() {
   
   $(function() {
 
-  $('[data-toggle="modal"]').hover(function() {
+  $('[data-target="#exampleModalCenter"]').hover(function() {
     var modalId = $(this).data('target');
     $(modalId).modal('show');
 
