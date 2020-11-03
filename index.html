@@ -81,7 +81,7 @@
         <div class="col-lg-6 d-flex flex-column about-content">
 
           <div class="section-title">
-            <h1 class="title-heading" class="ml3">What do they got in there? King Kong? </h1>
+            <h1 class="title-heading">What do they got in there? King Kong? </h1>
             <p>My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little aguar shark! So tell me - does it really exist? Hey, take a look at the earthlings. Goodbye!</p>
             <p>Karma. The essence of all things living and dying in the cycle of reality.</p>
           </div>
@@ -410,30 +410,8 @@
 
   <!-- End Footer -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-<script>
-  
-  // Wrap every letter in a span
-var textWrapper = document.querySelector('.ml3');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml3 .letter',
-    opacity: [0,1],
-    easing: "easeInOutQuad",
-    duration: 2250,
-    delay: (el, i) => 150 * (i+1)
-  }).add({
-    targets: '.ml3',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
-  
-  
-  
+<script>
   
 $(document).ready(function() {
   $("#videoplay").on("mouseover", function(event) {
