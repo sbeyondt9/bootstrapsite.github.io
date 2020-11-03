@@ -6,6 +6,7 @@
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="assets/img/favicon.png" rel="icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -71,7 +72,7 @@
 
 <img class="design-graphic2"src="assets/bg-design-3-03.png" alt="">
 
-  <section id="about">
+  <section data-aos="fade-right" id="about">
     <div class="container about">
 
 
@@ -410,7 +411,11 @@
 
   <!-- End Footer -->
 
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+  AOS.init();
+</script>
+        
 <script>
   
 $(document).ready(function() {
@@ -441,6 +446,7 @@ $(document).ready(function(){
 });
 </script>
 
+ 
 </body>
 
 </html>
