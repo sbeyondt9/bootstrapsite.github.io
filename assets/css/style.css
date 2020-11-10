@@ -2,6 +2,7 @@ body {
   /* font-family: "Open Sans", sans-serif; */
   /* background-color: #fcdab7; */
 }
+
 a {
   color: #1e5f74;
 }
@@ -27,6 +28,7 @@ p {
 
 h1 {
   font-size: 3rem;
+  color: #133b5c;
 }
 
 h2 {
@@ -98,7 +100,6 @@ h3 {
   animation-delay: 0.4s;
   color: black;
 } */
-
 #hero .btn-get-started {
   /* font-family: "Raleway", sans-serif; */
   font-weight: 500;
@@ -131,10 +132,9 @@ h3 {
   #hero p {
     width: 60%;
   } */
-
-  #hero .carousel-control-prev, #hero .carousel-control-next {
-    width: 5%;
-  }
+#hero .carousel-control-prev, #hero .carousel-control-next {
+  width: 5%;
+}
 }
 
 /*--------------------------------------------------------------
@@ -466,7 +466,6 @@ iframe {
 #home-title {
   background-image: url(https://s.studiobinder.com/wp-content/uploads/2018/03/Film-Lighting-Techniques-Cinematic-Look-Header-Image-StudioBinder.jpg);
   background-position: center;
-
 }
 
 #about {
@@ -476,12 +475,11 @@ iframe {
 
 #featured-reels {
   padding: 7% 10%;
-
 }
 
-#press{
-    padding: 7% 10%;
-    background-color: #fff;
+#press {
+  padding: 7% 10%;
+  background-color: #fff;
 }
 
 #feature-details {
@@ -494,7 +492,7 @@ iframe {
   text-align: center;
 }
 
-#about-partner-logos{
+#about-partner-logos {
   padding: 3% 10%;
   text-align: center;
 }
@@ -519,32 +517,38 @@ iframe {
   background-color: #fff;
 }
 
-#about-page-first-container{
-    padding: 8% 0%;
+#about-page-first-container {
+  padding: 8% 0%;
 }
 
-#about-page-intro{
+#about-page-intro {
   padding: 3% 10%;
 }
 
-#about-founder{
-    padding: 10% 0%;
-    background-color: #fff;
+#about-founder {
+  padding: 10% 0%;
 }
+
+@media (max-width : 1000px) {}
+
+.design-graphic-showreel,.design-graphic-founder,.design-graphic2,.design-graphic-contact,.design-graphic,.design-graphic-lower {
+        opacity: 0.2;
+        position: absolute;
+  }
+
 
 .navhome {
   padding: 4% 10%;
-  background-color: #1d2d50;
+  background-color: #133b5c;
 }
 
-.navpage{
+.navpage {
   padding: 1% 10%;
-  background-color: #1d2d50;
+  background-color: #133b5c;
 }
 
 .banner-image {
   position: absolute;
-
   width: 100%;
 }
 
@@ -622,36 +626,41 @@ iframe {
   color: #1d2d50;
 }
 
-.press-article{
+.press-article {
   padding: 3% 0;
 }
 
-.design-graphic{
-  position: absolute;
+.design-graphic {
+  width: 48rem;
+  left: 1px;
+}
+
+.design-graphic-lower {
+  width: 48rem;
+  right: 1px;
+  top: 185rem;
+  transform: rotate(180deg);
+}
+
+.design-graphic-contact {
   width: 50rem;
-  opacity: 0.2;
-  right: 2px;
+  left: 2px;
+  top: 10rem;
 }
 
-.design-graphic2{
-  position: absolute;
+.design-graphic2 {
   width: 40rem;
-  opacity: 0.2;
-  right: 60%;
-  top: 60rem;
+  left: 60%;
+  top: 42rem;
 }
 
-.design-graphic-founder{
-  position: absolute;
-  width: 30rem;
-  opacity: 0.5;
+.design-graphic-founder {
+  width: 60rem;
   right: 70%;
 }
 
-.design-graphic-showreel{
-  position: absolute;
+.design-graphic-showreel {
   width: 50rem;
-  opacity: 0.3;
   transform: rotate(45deg);
   top: 50rem;
 }
