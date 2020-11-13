@@ -535,6 +535,11 @@ iframe {
         opacity: 0.2;
         position: absolute;
   }
+@media (min-width: 576px)
+.modal-dialog {
+    max-width: 650px!important;
+    margin: 1.75rem auto;
+}
 
 
 .navhome {
@@ -665,8 +670,4 @@ iframe {
   top: 50rem;
 }
 
-@media (min-width: 576px)
-.modal-dialog {
-    max-width: 650px!important;
-    margin: 1.75rem auto;
-}
+
