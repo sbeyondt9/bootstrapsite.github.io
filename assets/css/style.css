@@ -667,6 +667,6 @@ iframe {
 
 @media (min-width: 576px)
 .modal-dialog {
-    max-width: 650%;
+    max-width: 650px!important;
     margin: 1.75rem auto;
 }
