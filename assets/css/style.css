@@ -664,3 +664,9 @@ iframe {
   transform: rotate(45deg);
   top: 50rem;
 }
+
+@media (min-width: 576px)
+.modal-dialog {
+    max-width: 650%;
+    margin: 1.75rem auto;
+}
