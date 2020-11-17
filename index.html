@@ -8,28 +8,14 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-
-
-  <!--  - Experimental font -->
-
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@600;700;800&family=Nobile:wght@700&display=swap" rel="stylesheet">
-  <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>-->
-
   <link href="assets/css/style.css" rel="stylesheet">
 <style>
 .fadel {
-  
   opacity:1;
- 
-}  
-  
+}
   </style>
 </head>
 
@@ -38,9 +24,7 @@
 
 <body>
 
-
   <section id="home-title">
-    <!-- <img class="banner-image" src="https://s.studiobinder.com/wp-content/uploads/2018/03/Film-Lighting-Techniques-Cinematic-Look-Header-Image-StudioBinder.jpg" alt=""> -->
 
     <nav class="navbar navhome navbar-expand-lg navbar-dark bg-transparent sticky-top">
       <a class="navbar-brand " href="index.html">Kreative Karma</a>
@@ -76,7 +60,7 @@
         <div class="col-md-10">
           <h1 style="color:#fff;" class="banner-caption">"Karma. The essence of all things alive." </h1>
 
-          <p class="banner-caption-data fadel">Karma. The essence of all things living and dying in the cycle of reality.</p>
+          <p class="banner-caption-data fadel">Entertain, educate, and inspire are three pillars of our creative activities.</p>
           <button type="button" class="btn btn-outline-light">Learn More</button>
         </div>
       </div>
@@ -94,7 +78,7 @@
           <div class="col-lg-6 d-flex flex-column about-content">
 
             <div class="section-title">
-              <h1 class="title-heading fadel">What do they got in there? King Kong? </h1>
+              <h1 class="title-heading fadel">5 years. 50 Awards. 20 Gripping Stories.</h1>
               <p>My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little aguar shark! So tell me - does it really exist? Hey, take a look at the earthlings. Goodbye!</p>
               <p>Karma. The essence of all things living and dying in the cycle of reality.</p>
             </div>
@@ -213,7 +197,7 @@
 
           </div>
 
-         
+
           <div class="col-lg-4 col-md-4 d-flex flex-column reel">
             <div class="embed-responsive embed-responsive-16by9">
 
@@ -285,7 +269,7 @@
           <div class="col-lg-4 col-md-4 d-flex flex-column reel">
             <div class="embed-responsive embed-responsive-16by9">
 
-             
+
               <iframe data-toggle="modal" data-target="#exampleModalCenter5" width="560" height="315" src="https://www.youtube.com/embed/oc6ilhBgCj8" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -346,7 +330,7 @@
 
           <div class="col-lg-6">
             <div class="feature-detail-text">
-              <h2 class="title-heading fadel">I was part of something special. Life finds a way.</h2>
+              <h2 class="title-heading fadel">Stories that intrigue, Excite and Educate</h2>
               <p>Do you have any idea how long it takes those cups to decompose. I gave it a cold? I gave it a virus. A computer virus. Forget the fat lady! You're obsessed with the fat lady!</p>
               <br>
               <button type="button" class="btn btn-dark btn-md" data-toggle="modal" data-target="#exampleModalCenter10">Read More</button>
@@ -385,7 +369,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="feature-detail-text">
-              <h2 class="title-heading fadel">You're a very talented young man, with your own clever thoughts and ideas.</h2>
+              <h2 class="title-heading fadel">Developing the next generation of Filmmakers</h2>
               <p>Life finds a way. This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Did he just throw my cat out of the window? My dad once told me, laugh and the world laughs with you, Cry, and I'll give you
                 something to cry about you little bastard!</p>
               <br>
@@ -519,7 +503,7 @@ $(window).on("load",function() {
     $(".fadel").each(function() {
       /* Check the location of each desired element */
       var objectBottom = $(this).offset().top + $(this).outerHeight();
-      
+
       /* If the element is completely within bounds of the window, fade it in */
       if (objectBottom < windowBottom) { //object comes into view (scrolling down)
         if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
@@ -529,8 +513,8 @@ $(window).on("load",function() {
     });
   }).scroll(); //invoke scroll-handler on page-load
 });
-    
-    
+
+
 
 
 
