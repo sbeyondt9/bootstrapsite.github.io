@@ -21,6 +21,11 @@
   <link href="assets/css/style.css" rel="stylesheet">
   
   <style>
+    
+    .fadel {
+  opacity:1;
+}
+    
     .container1 {
   position: relative;
   text-align: center;
@@ -92,7 +97,7 @@
       <div class="col-lg-6">
         <div class="section-title">
           <!--<h2>About Us</h2>-->
-          <h3>Vision Towards the Future </h3> <br>
+          <h3 class="fade1">Vision Towards the Future </h3> <br>
           <p>Entertain, educate, and inspire are three pillars of our creative activities.<br>
             A variety of taste equals a variety of films. We aim to provide entertainment in every section of society. All genres of entertainment from comedy, tragedy, thriller, and social are to be covered by the variety of our videos. <br> <br>A
             visionary step towards compiling the core artistic substance, the company aims to give original content to its
@@ -106,7 +111,7 @@
         <div class="section-title">
           <!--<h2>About Us</h2>-->
           <br>
-          <h3>The Kreative Karma Learning Academy</h3><br>
+          <h3 class="fade1">The Kreative Karma Learning Academy</h3><br>
           <p>An academy on acting, which offers a compilation of Indian, International
             and worldwide executed courses on acting with renowned and accomplished professionals,
             who have etched their footprints in their respective fields. The international acting courses have enabled Indian actors to exercise their talent in the new emerging global scenario. The three months course incorporates the simple and
@@ -167,7 +172,7 @@
       </div>
 
       <div class="col-lg-8 col-md-6">
-        <h3>Bobby Vats, Founder</h3>
+        <h3 class="fade1">Bobby Vats, Founder</h3>
         <p>Bobby Vats is a well known indian film actor with many films to his credit. Theatre has been his grooming ground with many national and international presentations in film, television and advertising commercials to his credit. He has
           worked with the likes of Nana Patekar, Hema Malini, Abhishek Bachan and Neil Nitin Mukesh among others. The founder of Kreative Karma, he has made an acclaimed short film named "The
           Cure".
@@ -281,7 +286,7 @@
       <div class="col-lg-3">
         <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
       </div>
-      <div class="col-lg-9">
+      <div class="col-lg-9 fade1">
         <h3 class="text-justify">This is dummy text</h3>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit.Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. </p>
         <a href="#">Read More</a>
@@ -292,8 +297,8 @@
       <div class="col-lg-3">
         <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
       </div>
-      <div class="col-lg-9">
-        <h3 class="text-justify">This is dummy text</h3>
+      <div class="col-lg-9 fade1">
+        <h3 class="text-justify fade1">This is dummy text</h3>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit.Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. </p>
         <a href="#">Read More</a>
       </div>
@@ -303,8 +308,8 @@
       <div class="col-lg-3">
         <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
       </div>
-      <div class="col-lg-9">
-        <h3 class="text-justify">This is dummy text</h3>
+      <div class="col-lg-9 fade1">
+        <h3 class="text-justify fade1">This is dummy text</h3>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit.Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. </p>
         <a href="#">Read More</a>
       </div>
@@ -375,6 +380,25 @@
 
 <!-- End Footer -->
 
+  <script>
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".fadel").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }).scroll();
+});
+
+  </script>
 </body>
 
 </html>
