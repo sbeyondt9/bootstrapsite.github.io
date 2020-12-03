@@ -622,6 +622,11 @@ Also a story about the delicate, loving heart of women taken for a ride leading 
     });
 
   });
+  
+  
+  $('#modal-video').on('hidden.bs.modal', function () {
+    $("#modal-video iframe").attr("src", $("#modal-video iframe").attr("src"));
+});
 </script>
 </body>
 
