@@ -623,7 +623,16 @@ Also a story about the delicate, loving heart of women taken for a ride leading 
 
   });
   
+//Hover play
+$('iframe').on('mouseover',function(){
+    player.playVideo();
+});
 
+//Blur Pause
+
+$('iframe').on('mouseout',function(){
+    player.playVideo();
+});
   
   var playersrc=$('#ytplayer').attr('src');
 $('#ytplayer').mouseover(function(){
