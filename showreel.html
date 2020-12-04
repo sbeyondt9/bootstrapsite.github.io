@@ -576,7 +576,7 @@ Also a story about the delicate, loving heart of women taken for a ride leading 
                   </button>
                 </div>
                 <div class="modal-body">
-                  <br><br><br><br><br><br><br><br><br><br><iframe id="ytplayer" width="560" height="315" src="https://www.youtube.com/embed/3wX1iknOJhc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <br><br><br><br><br><br><br><br><br><br><iframe onmouseover="this.src=playersrc+'&autoplay=1'" onmouseout="this.src=playersrc" width="560" height="315" src="https://www.youtube.com/embed/3wX1iknOJhc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                       <div class="modal-footer">
           <a class="social-icons" href="https://instagram.com/kreativekarma.in?igshid=1w8m4loq4o6cf"><i class='fa fa-instagram fa-2x'></i></a>
@@ -615,19 +615,12 @@ Also a story about the delicate, loving heart of women taken for a ride leading 
   <!-- End Footer -->
 
 <script>
-  
-    var playersrc=$('#ytplayer').attr('src');
-$('#ytplayer').mouseover(function(){
-$('#ytplayer').attr('src',playersrc+'&autoplay=1');
-});
-$('#ytplayer').mouseout(function(){
-$('#ytplayer').attr('src',playersrc);
-});
+  var playersrc;
+  playersrc=document.getElementById('JSytplayer').src;
   
   
   
-  
-  $(function() {
+   $(function() {
 
     $('[data-toggle="modal"]').hover(function() {
       var modalId = $(this).data('target');
@@ -637,11 +630,7 @@ $('#ytplayer').attr('src',playersrc);
 
   });
 
-  
-
-  
-  
-</script>
+ </script>
 </body>
 
 </html>
