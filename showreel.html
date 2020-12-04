@@ -21,7 +21,9 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <style>
-
+.embed-responsive-16by9::before {
+    padding-top: 6.25%;
+}
 
   </style>
 
@@ -613,6 +615,18 @@ Also a story about the delicate, loving heart of women taken for a ride leading 
   <!-- End Footer -->
 
 <script>
+  
+    var playersrc=$('#ytplayer').attr('src');
+$('#ytplayer').mouseover(function(){
+$('#ytplayer').attr('src',playersrc+'&autoplay=1');
+});
+$('#ytplayer').mouseout(function(){
+$('#ytplayer').attr('src',playersrc);
+});
+  
+  
+  
+  
   $(function() {
 
     $('[data-toggle="modal"]').hover(function() {
@@ -622,25 +636,9 @@ Also a story about the delicate, loving heart of women taken for a ride leading 
     });
 
   });
-  
-//Hover play
-$('iframe').on('mouseover',function(){
-    player.playVideo();
-});
 
-//Blur Pause
-
-$('iframe').on('mouseout',function(){
-    player.playVideo();
-});
   
-  var playersrc=$('#ytplayer').attr('src');
-$('#ytplayer').mouseover(function(){
-$('#ytplayer').attr('src',playersrc+'&autoplay=1');
-});
-$('#ytplayer').mouseout(function(){
-$('#ytplayer').attr('src',playersrc);
-});
+
   
   
 </script>
