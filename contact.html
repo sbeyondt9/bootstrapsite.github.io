@@ -23,7 +23,32 @@
   
   
   <style>
- 
+ @media  only screen and (min-device-width: 768px) 
+{
+    .form-container {
+      padding: 5%;
+      background: #ffffff;
+      border: 9px solid #f2f2f2;            
+      max-width: 520px;
+      margin: auto;
+    }
+
+}
+
+h1, p 
+{
+  text-align: center;
+}
+
+input, textarea , button
+{
+  width: 100%;
+}    
+textarea
+{
+  height: 200px;
+}
+
   
   </style>
   
@@ -154,6 +179,7 @@
 
 
  <script type="text/javascript">
+
 $(function()
 {
     function after_form_submitted(data) 
@@ -216,6 +242,7 @@ $(function()
         
       });	
 });
+
 
    
    
