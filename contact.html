@@ -76,28 +76,28 @@
     <div class="row">
 
       <div class="col-lg-6 form-group contactforms" data-aos="fade-up" data-aos-delay="300">
-  <?php echo $error; ?>
-      <form method="post">
-      <div class="form-group">
-       <label>Enter Name</label>
-       <input type="text" name="name" placeholder="Enter Name" class="form-control" value="Name" />
-      </div>
-      <div class="form-group">
-       <label>Enter Email</label>
-       <input type="text" name="email" class="form-control" placeholder="Enter Email" value="Email" />
-      </div>
-      <div class="form-group">
-       <label>Enter Subject</label>
-       <input type="text" name="subject" class="form-control" placeholder="Enter Subject" value="Subject" />
-      </div>
-      <div class="form-group">
-       <label>Enter Message</label>
-       <textarea name="message" class="form-control" placeholder="Enter Message">Message</textarea>
-      </div>
-      <div class="form-group" align="center">
-       <input type="submit" name="submit" value="Submit" class="btn btn-info" />
-      </div>
-     </form>
+        
+ <div class="container">
+            <div class="form-container">
+                <h1>
+                    Contact Us
+                </h1>
+                <form method="post" id="reused_form" >
+                    <label for="name">Your Name:</label>
+                    <input id="name" type="text" name="Name" required maxlength="50">
+                    <label for="email">Email Address:</label>
+                    <input id="email" type="email" name="Email" required maxlength="50">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="Message" rows="10" maxlength="6000" required></textarea>
+                    <button class="button-primary" type="submit" >Post</button>
+                </form>
+                <div id="success_message" style="display:none">
+                    <h3>Submitted the form successfully!</h3> 
+                    <p> We will get back to you soon. </p>
+                </div>
+                <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+            </div>
+        </div>
 
 
       </div>
@@ -154,45 +154,74 @@
 
 
  <script type="text/javascript">
-        function validateContactForm() {
-            var valid = true;
-
-            $(".info").html("");
-            $(".input-field").css('border', '#e0dfdf 1px solid');
-            var userName = $("#userName").val();
-            var userEmail = $("#userEmail").val();
-            var subject = $("#subject").val();
-            var content = $("#content").val();
-            
-            if (userName == "") {
-                $("#userName-info").html("Required.");
-                $("#userName").css('border', '#e66262 1px solid');
-                valid = false;
-            }
-            if (userEmail == "") {
-                $("#userEmail-info").html("Required.");
-                $("#userEmail").css('border', '#e66262 1px solid');
-                valid = false;
-            }
-            if (!userEmail.match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/))
-            {
-                $("#userEmail-info").html("Invalid Email Address.");
-                $("#userEmail").css('border', '#e66262 1px solid');
-                valid = false;
-            }
-
-            if (subject == "") {
-                $("#subject-info").html("Required.");
-                $("#subject").css('border', '#e66262 1px solid');
-                valid = false;
-            }
-            if (content == "") {
-                $("#userMessage-info").html("Required.");
-                $("#content").css('border', '#e66262 1px solid');
-                valid = false;
-            }
-            return valid;
+$(function()
+{
+    function after_form_submitted(data) 
+    {
+        if(data.result == 'success')
+        {
+            $('form#reused_form').hide();
+            $('#success_message').show();
+            $('#error_message').hide();
         }
+        else
+        {
+            $('#error_message').append('<ul></ul>');
+
+            jQuery.each(data.errors,function(key,val)
+            {
+                $('#error_message ul').append('<li>'+key+':'+val+'</li>');
+            });
+            $('#success_message').hide();
+            $('#error_message').show();
+
+            //reverse the response on the button
+            $('button[type="button"]', $form).each(function()
+            {
+                $btn = $(this);
+                label = $btn.prop('orig_label');
+                if(label)
+                {
+                    $btn.prop('type','submit' ); 
+                    $btn.text(label);
+                    $btn.prop('orig_label','');
+                }
+            });
+            
+        }//else
+    }
+
+	$('#reused_form').submit(function(e)
+      {
+        e.preventDefault();
+
+        $form = $(this);
+        //show some response on the button
+        $('button[type="submit"]', $form).each(function()
+        {
+            $btn = $(this);
+            $btn.prop('type','button' ); 
+            $btn.prop('orig_label',$btn.text());
+            $btn.text('Sending ...');
+        });
+        
+
+                    $.ajax({
+                type: "POST",
+                url: 'handler.php',
+                data: $form.serialize(),
+                success: after_form_submitted,
+                dataType: 'json' 
+            });        
+        
+      });	
+});
+
+   
+   
+   
+   
+   
 </script>
 
 </body>
