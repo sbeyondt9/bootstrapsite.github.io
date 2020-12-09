@@ -23,71 +23,7 @@
   
   
   <style>
-  .form-container {
-    background: #f1ecdf;
-    border: #e2ddd2 1px solid;
-    padding: 20px;
-    border-radius: 2px;
-}
-
-.input-row {
-    margin-bottom: 20px;
-}
-
-.input-row label {
-    color: #75726c;
-}
-
-.input-field {
-    width: 100%;
-    border-radius: 2px;
-    padding: 10px;
-    border: #e0dfdf 1px solid;
-    box-sizing: border-box;
-    margin-top: 2px;
-}
-
-.span-field {
-    font: Arial;
-    font-size: small;
-    text-decoration: none;
-}
-
-.btn-submit {
-    padding: 10px 60px;
-    background: #9e9a91;
-    border: #8c8880 1px solid;
-    color: #ffffff;
-    font-size: 0.9em;
-    border-radius: 2px;
-    cursor: pointer;
-}
-
-.errorMessage {
-    background-color: #e66262;
-    border: #AA4502 1px solid;
-    padding: 5px 10px;
-    color: #FFFFFF;
-    border-radius: 3px;
-}
-
-.successMessage {
-    background-color: #9fd2a1;
-    border: #91bf93 1px solid;
-    padding: 5px 10px;
-    color: #3d503d;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 0.9em;
-}
-
-.info {
-    font-size: .8em;
-    color: #e66262;
-    letter-spacing: 2px;
-    padding-left: 5px;
-}
-  
+ 
   
   </style>
   
@@ -141,49 +77,27 @@
 
       <div class="col-lg-6 form-group contactforms" data-aos="fade-up" data-aos-delay="300">
   
-        <div class="form-container">
-        <form name="frmContact" id="" frmContact"" method="post"
-            action="contact.html" enctype="multipart/form-data"
-            onsubmit="return validateContactForm()">
-
-            <div class="input-row">
-                <label style="padding-top: 20px;">Name</label> <span
-                    id="userName-info" class="info"></span><br /> <input
-                    type="text" class="input-field" name="userName"
-                    id="userName" />
-            </div>
-            <div class="input-row">
-                <label>Email</label> <span id="userEmail-info"
-                    class="info"></span><br /> <input type="text"
-                    class="input-field" name="userEmail" id="userEmail" />
-            </div>
-            <div class="input-row">
-                <label>Subject</label> <span id="subject-info"
-                    class="info"></span><br /> <input type="text"
-                    class="input-field" name="subject" id="subject" />
-            </div>
-            <div class="input-row">
-                <label>Message</label> <span id="userMessage-info"
-                    class="info"></span><br />
-                <textarea name="content" id="content"
-                    class="input-field" cols="60" rows="6"></textarea>
-            </div>
-            <div>
-                <input type="submit" name="send" class="btn-submit"
-                    value="Send" />
-
-                <div id="statusMessage"> 
-                        <?php
-                        if (! empty($message)) {
-                            ?>
-                            <p class='<?php echo $type; ?>Message'><?php echo $message; ?></p>
-                        <?php
-                        }
-                        ?>
-                    </div>
-            </div>
-        </form>
-    </div>
+      <form method="post">
+      <div class="form-group">
+       <label>Enter Name</label>
+       <input type="text" name="name" placeholder="Enter Name" class="form-control" value="<?php echo $name; ?>" />
+      </div>
+      <div class="form-group">
+       <label>Enter Email</label>
+       <input type="text" name="email" class="form-control" placeholder="Enter Email" value="<?php echo $email; ?>" />
+      </div>
+      <div class="form-group">
+       <label>Enter Subject</label>
+       <input type="text" name="subject" class="form-control" placeholder="Enter Subject" value="<?php echo $subject; ?>" />
+      </div>
+      <div class="form-group">
+       <label>Enter Message</label>
+       <textarea name="message" class="form-control" placeholder="Enter Message"><?php echo $message; ?></textarea>
+      </div>
+      <div class="form-group" align="center">
+       <input type="submit" name="submit" value="Submit" class="btn btn-info" />
+      </div>
+     </form>
 
 
       </div>
