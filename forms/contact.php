@@ -1,26 +1,16 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-/*
-Tested working with PHP5.4 and above (including PHP 7 )
-
- */
-require_once './vendor/autoload.php';
-
-use FormGuide\Handlx\FormHandler;
-
-
-$pp = new FormHandler(); 
-
-$validator = $pp->getValidator();
-$validator->fields(['Name','Email'])->areRequired()->maxLength(50);
-$validator->field('Email')->isEmail();
-$validator->field('Message')->maxLength(6000);
-
-
-
-
-$pp->sendEmailTo('earncoin1105@gmail.com'); // ← Your email here
-
-echo $pp->process($_POST);
+//get data from form  
+$name = $_POST['name'];
+$email= $_POST['email'];
+$message= $_POST['message'];
+$to = "santosh@beyondt.in";
+$subject = "Mail From website";
+$txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $message;
+$headers = "From: noreply@yoursite.com" . "\r\n" .
+"CC: somebodyelse@example.com";
+if($email!=NULL){
+    mail($to,$subject,$txt,$headers);
+}
+//redirect
+header("Location:thankyou.html");
+?>
