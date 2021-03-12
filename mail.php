@@ -4,7 +4,7 @@
 $name = $_POST['name'];
 $email= $_POST['email'];
 $message= $_POST['message'];
-$to = "bobbyvatsa@yahoo.com";
+$to = "earncoin1105@gmail.com";
 $subject = "Mail From KreativeKarma";
 $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $message;
 $headers = "From: noreply@kreativekarma.in" . "\r\n" .
