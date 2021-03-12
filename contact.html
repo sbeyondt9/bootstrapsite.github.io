@@ -110,14 +110,14 @@ textarea
                 <h1>
                     Contact Us
                 </h1>
-                <form method="post" id="reused_form" >
+                <form method="contact.php" method="post" id="reused_form" >
                     <label for="name">Your Name:</label>
-                    <input id="name" type="text" name="Name" required maxlength="50">
+                    <input id="name" type="text" name="name" required maxlength="50">
                     <label for="email">Email Address:</label>
-                    <input id="email" type="email" name="Email" required maxlength="50">
+                    <input id="email" type="email" name="email" required maxlength="50">
                     <label for="message">Message:</label>
-                    <textarea id="message" name="Message" rows="10" maxlength="6000" required></textarea>
-                    <button class="button-primary" type="submit" >Send</button>
+                    <textarea id="message" name="message" rows="10" maxlength="6000" required></textarea>
+                    <button class="button-primary" type="submit" value="Submit">Send</button>
                 </form>
                 <div id="success_message" style="display:none">
                     <h3>Submitted the form successfully!</h3> 
