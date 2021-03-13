@@ -124,7 +124,7 @@ textarea
                   required="">
               </div><br>
               <textarea name="Message" class="form-control" id="Message" placeholder="Message"
-                required=""></textarea>
+                required=""></textarea><br>
               <button type="submit" class="btn btn-contact">Send</button>
               <!-- <input type="button" class="btn btn-contact" onclick="sendmail();"  value="Send Message"> -->
 
@@ -202,9 +202,10 @@ textarea
 			//console.log(name, phone, email, message);
 
 			Email.send({
-        SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
-				To: 'santosh@beyondt.in',
-				From: "sbeyondt09@gmail.com",
+				
+     SecureToken : "0212632f-cab0-4e63-a23b-2cf0f2d480a2",
+    To : 'santosh@beyondt.in',
+    From : "sbeyondt9@gmail.com",
 				Subject: "New message on contact from "+name,
 				Body: Body
 			}).then(
