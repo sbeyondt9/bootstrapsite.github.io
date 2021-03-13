@@ -110,15 +110,14 @@ textarea
                 <h1>
                     Contact Us
                 </h1>
-                <form action="mail.php" method="post">
-                    <label for="name">Your Name:</label>
-                    <input id="name" type="text" name="name" required maxlength="50">
-                    <label for="email">Email Address:</label>
-                    <input id="email" type="email" name="email" required maxlength="50">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="10" maxlength="6000" required></textarea>
-                    <input type="submit" value="Submit">
-                </form>
+            <form action="https://formspree.io/f/maylrdpy" method="POST">
+  <label>Your email:<input type="email" name="_replyto"></label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+   <button type="submit">Send</button>
+</form>
              
             </div>
         </div>
