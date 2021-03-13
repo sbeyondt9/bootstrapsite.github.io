@@ -120,7 +120,7 @@ textarea
                   required="">
               </div><br>
               <div class="field">
-                <input type="text" class="form-control" name="Subject" id="Subject" placeholder="Contact"
+                <input type="text" class="form-control" name="Contact" id="Contact" placeholder="Contact"
                   required="">
               </div><br>
               <textarea name="Message" class="form-control" id="Message" placeholder="Message"
@@ -186,79 +186,48 @@ textarea
   </div>
   <!-- End Footer -->
 
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>  
 
- <script type="text/javascript">
+     function sendmail(){
+    
+			var name = $('#Name').val();
+			var email = $('#Sender').val();
+			var contact = $('#Contact').val();
+      var message = $('#Message').val();
 
-$(function()
-{
-    function after_form_submitted(data) 
-    {
-        if(data.result == 'success')
-        {
-            $('form#reused_form').hide();
-            $('#success_message').show();
-            $('#error_message').hide();
-        }
-        else
-        {
-            $('#error_message').append('<ul></ul>');
+			// var body = $('#body').val();
 
-            jQuery.each(data.errors,function(key,val)
-            {
-                $('#error_message ul').append('<li>'+key+':'+val+'</li>');
-            });
-            $('#success_message').hide();
-            $('#error_message').show();
+			var Body='Name: '+name+'<br>Email: '+email+'<br>Contact: '+contact+'<br>Message: '+message;
+			//console.log(name, phone, email, message);
 
-            //reverse the response on the button
-            $('button[type="button"]', $form).each(function()
-            {
-                $btn = $(this);
-                label = $btn.prop('orig_label');
-                if(label)
-                {
-                    $btn.prop('type','submit' ); 
-                    $btn.text(label);
-                    $btn.prop('orig_label','');
-                }
-            });
-            
-        }//else
-    }
+			Email.send({
+        SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+				To: 'santosh@beyondt.in',
+				From: "demooptimalweb@gmail.com",
+				Subject: "New message on contact from "+name,
+				Body: Body
+			}).then(
+				message =>{
+					//console.log (message);
+					if(message=='OK'){
+					alert('Your mail has been send. Thank you for connecting.');
+					}
+					else{
+						console.error (message);
+						alert('There is error at sending message. ')
+						
+					}
 
-	$('#reused_form').submit(function(e)
-      {
-        e.preventDefault();
-
-        $form = $(this);
-        //show some response on the button
-        $('button[type="submit"]', $form).each(function()
-        {
-            $btn = $(this);
-            $btn.prop('type','button' ); 
-            $btn.prop('orig_label',$btn.text());
-            $btn.text('Sending ...');
-        });
-        
-
-                    $.ajax({
-                type: "POST",
-                url: 'handler.php',
-                data: $form.serialize(),
-                success: after_form_submitted,
-                dataType: 'json' 
-            });        
-        
-      });	
-});
+				}
+			);
 
 
-   
-   
-   
-   
-   
-</script>
+
+		}
+
+
+    </script>
 
 </body>
 
