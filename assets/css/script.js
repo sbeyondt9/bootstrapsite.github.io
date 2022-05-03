@@ -1,4 +1,4 @@
-  
+
 $(window).on("load",function() {
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
@@ -20,7 +20,22 @@ $(window).on("load",function() {
 
 
 $(document).ready(function(){
- 
+
     $("#foot_load").load("footer.html");
-  
-}); 
+
+});
+
+
+window.addEventListener("load", function(){
+setTimeout(
+    function open(event){
+        document.querySelector(".popup").style.display = "block";
+    },
+    700
+)
+});
+
+
+document.querySelector("#close").addEventListener("click", function(){
+document.querySelector(".popup").style.display = "none";
+});
