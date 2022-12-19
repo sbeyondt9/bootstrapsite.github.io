@@ -757,6 +757,7 @@ iframe {
     z-index: +1;
     position: fixed;
     border: 3px black;
+	transition-delay: 12s;
 }
 .popup button{
     display: block;
